@@ -1,4 +1,4 @@
-exports default class Rectangle {
+export default class Rectangle {
     // Runs when rectangle is initialized
     constructor(width, height) {
         this.width = width;

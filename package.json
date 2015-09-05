@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --compilers js:babel/register",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --compilers js:babel/register"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,8 @@
   "devDependencies": {
     "babel": "^5.8.23",
     "chai": "^3.2.0",
+    "isparta": "^3.0.4",
+    "istanbul": "^0.3.19",
     "mocha": "^2.3.0"
   }
 }
